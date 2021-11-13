@@ -1,3 +1,25 @@
+[![img](https://img.icons8.com/color/48/000000/typescript.png)][1]
+[![img](https://img.icons8.com/plasticine/48/000000/react.png)][2]
+![img](https://img.icons8.com/color/48/000000/css.png)
+[![img](https://img.icons8.com/color/48/000000/icons8-new-logo.png)][3]
+
+# CCT Internship Test Task
+
+Site published at: https://keen-agnesi-ba06f3.netlify.app/
+
+## Project features
+
+- React
+- TypeScript
+- CSS animations
+- CSS import
+- Github
+
+## Authors
+
+Simona: [Github](https://github.com/simonachess)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +66,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+[1]: https://www.typescriptlang.org/
+[2]: https://reactjs.org/
+[3]: https://img.icons8.com/
