@@ -22,9 +22,7 @@ const Task: React.FC<Props> = ({ index, title, subtasks }) => {
     };
 
     useEffect(() => {
-        // add when mounted
         document.addEventListener("click", handleClick);
-        // return function to be called when unmounted
         return () => {
             document.removeEventListener("click", handleClick);
         };
