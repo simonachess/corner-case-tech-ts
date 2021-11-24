@@ -1,10 +1,13 @@
-import React from 'react';
-import Task from "./Task";
+import React, { useState } from 'react';
+import Task from "../task/Task";
 import "./App.css";
 
-const data: Array<{ index: number, title: string, tasks: string[] }> = [
+
+
+
+const data = [
   {
-    index: 1,
+    id: 1,
     title: 'Build test task',
     tasks:
       [
@@ -14,7 +17,7 @@ const data: Array<{ index: number, title: string, tasks: string[] }> = [
       ],
   },
   {
-    index: 2,
+    id: 2,
     title: 'Submit your test task',
     tasks:
       [
@@ -23,7 +26,7 @@ const data: Array<{ index: number, title: string, tasks: string[] }> = [
       ],
   },
   {
-    index: 3,
+    id: 3,
     title: 'Participate in tech interview',
     tasks:
       [
@@ -32,7 +35,7 @@ const data: Array<{ index: number, title: string, tasks: string[] }> = [
       ],
   },
   {
-    index: 4,
+    id: 4,
     title: 'Receive answer',
     tasks:
       [
@@ -42,13 +45,15 @@ const data: Array<{ index: number, title: string, tasks: string[] }> = [
   }
 ]
 
-const App: React.FC = () => {
+const App = () => {
+
+  const [selected, setSelected] = useState<number | null>(null);
 
   return (
     <div className="App">
       <h1>CCT Lab Process</h1>
       {data.map((task, index) =>
-        <Task index={task.index} title={task.title} subtasks={task.tasks} key={index} />
+        <Task index={task.id} title={task.title} subtasks={task.tasks} show={selected === task.id} key={index} onClick={() => setSelected(task.id)} />
       )}
     </div>
   );
