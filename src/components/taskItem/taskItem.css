@@ -1,0 +1,29 @@
+.all-tasks {
+    width: 100%;
+    padding-left: 40px;
+    animation-timing-function: linear;
+    animation: mymove 1.2s;
+    position: relative;
+}
+
+.task-item {
+    display: flex;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+@keyframes mymove {
+    from {
+        top: -20px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .task-item {
+        font-size: 14px;
+    }
+}

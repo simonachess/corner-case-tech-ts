@@ -1,25 +1,16 @@
 import React from 'react';
 import TaskItems from "../taskItem/TaskItems";
 
-
-interface Props {
-    id: number,
-    title: string,
-    subtasks: string[],
-    onCLick: any,
-    show: any
-}
-
-const Task: React.FC<any> = ({ index, title, subtasks, onClick, show }) => {
+const Task: React.FC<any> = ({ index, title, subtasks, onClick, selected }) => {
 
     return (
-        <div onClick={onClick}>
+        <div onClick={onClick} role="button">
             <div className="task-text">
-                <div className="number" key={index}>{index}</div>
-                <div className="text" key={title}>{title}</div>
-                <span className={`line ${show ? "line-longer" : ""}`} />
+                <span className="number" key={index}>{index}</span>
+                <p className="text" key={title}>{title}</p>
+                <span className={`line ${selected ? "line-longer" : ""}`} />
             </div>
-            {show && <TaskItems subtasks={subtasks} />}
+            {selected && <TaskItems subtasks={subtasks} selected={selected} />}
         </div>
     )
 }
