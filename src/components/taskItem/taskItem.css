@@ -1,5 +1,4 @@
 .all-tasks {
-    width: 100%;
     padding-left: 40px;
     animation-timing-function: linear;
     animation: mymove 1.2s;
@@ -25,5 +24,9 @@
 @media only screen and (max-width: 360px) {
     .task-item {
         font-size: 14px;
+    }
+
+    .all-tasks {
+        padding-left: 0;
     }
 }

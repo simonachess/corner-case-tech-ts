@@ -1,9 +1,14 @@
+.task-container {
+    margin: 10px;
+}
+
 .task-text {
-    margin: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     align-items: center;
     position: relative;
+    margin: 20px 0;
+    padding: 15px;
 }
 
 .task-text p {
@@ -25,6 +30,7 @@
 }
 
 .number {
+    flex-shrink: 0;
     width: 50px;
     height: 50px;
     background-color: #00adaa;
@@ -46,5 +52,9 @@
         height: 30px;
         line-height: 30px;
         font-size: 16px;
+    }
+
+    .task-text {
+        margin: 20px 0;
     }
 }

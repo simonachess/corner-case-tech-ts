@@ -4,7 +4,7 @@ import TaskItems from "../taskItem/TaskItems";
 const Task: React.FC<any> = ({ index, title, subtasks, onClick, selected }) => {
 
     return (
-        <div onClick={onClick} role="button">
+        <div onClick={onClick} role="button" className="task-container">
             <div className="task-text">
                 <span className="number" key={index}>{index}</span>
                 <p className="text" key={title}>{title}</p>
